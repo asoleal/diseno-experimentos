@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+    .wy-nav-content {
+        padding: 0 1em;
+    }
+    .wy-nav-side {
+        width: 60px;  /* Reduce el tamaño del sidebar en dispositivos pequeños */
+    }
+}
