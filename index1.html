@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4 del Curso Diseño de Experimentos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2980B9, #6DD5FA);
+            display: flex;
+            height: 100vh;
+        }
+
+        #sidebar {
+            width: 200px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+            color: #fff;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        a {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <h3>Ejercicios Taller 4 y Soluciones</h3>
+    <a href="#" onclick="showPage('tabla_de_datos.html')">Ejercicio No 1</a>
+    <a href="#" onclick="showPage('tarea4_1.html')">Solución 1</a>
+    <a href="#" onclick="showPage('tarea4_2.html')">Ejercicio No 2</a>
+    <a href="#" onclick="showPage('tarea4_3.html')">Ejercicio No. 3</a>
+    <a href="#" onclick="showPage('pagina3.html')">Punto No. 3</a>
+    <!-- Agrega más enlaces según sea necesario -->
+</div>
+
+<div id="content">
+    <h1>Diseño de Experimentos, Taller 4</h1>
+    <iframe id="iframe" src="tarea4_3.html"></iframe>
+</div>
+
+<script>
+    function showPage(url) {
+        document.getElementById('iframe').src = url;
+    }
+</script>
+
+</body>
+</html>
+
